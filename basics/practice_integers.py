@@ -129,6 +129,16 @@ a="Purnesh reddy surname chinthaparthy"
 b=a.rpartition("reddy")
 print(b)
 
+a="this is marathom race"
+print(a.replace("i","@"))
+
+li = [1, 2, 3]
+li2 = [1, 2, 3]
+li.append(10)
+print(id(li))
+print(id(li2))
+print(li)
+
 
 
 
