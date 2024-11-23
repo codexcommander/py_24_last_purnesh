@@ -65,3 +65,6 @@ print(l7)
 l7.insert(-7, ["hello", 4444, 555, 666])
 print(l7)
 
+purnehed andk;jnscksd
+smd bkjnfn
+
