@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Program to read N numbers and print 10 numbers after N numbers
 a=int(input())
 c=1
@@ -68,3 +69,13 @@ for i in range(1,n+1):
 
 
 
+=======
+a= 10
+b= 10
+c= [1,2,3]
+d= [1,2,3]
+print(a == b)
+print(c == d)
+print(a is b)
+print(c is d)
+>>>>>>> 1d4c10f8fa6ae2d0598c148b1670823696cb0802
