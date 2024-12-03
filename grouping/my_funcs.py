@@ -61,3 +61,26 @@ def usd():
 
 print(usd())
 
+#multiplication table
+def table(a):
+    tble_li=[]
+for i in range(1,11):
+    tble_li.append(a,"*",i,a*i)
+    return tble_li
+
+import math
+
+def second_func(a, b, c):
+    return a + c - b
+second_func(rn,s,rp)
+#strings are retuning errors
+
+
+
+
+
+
+
+
+
+
