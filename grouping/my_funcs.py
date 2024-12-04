@@ -64,16 +64,45 @@ print(usd())
 #multiplication table
 def table(a):
     tble_li=[]
-for i in range(1,11):
-    tble_li.append(a,"*",i,a*i)
+    for i in range(1,11):
+        tble_li.append(a,"*",i,a*i)
     return tble_li
 
 import math
 
-def second_func(a, b, c):
-    return a + c - b
-second_func(rn,s,rp)
-#strings are retuning errors
+def is_prime(n):
+    if n < 2:
+        return False
+    i = 2
+    while i*i <= n:
+        if n % i == 0:
+            return False
+        i += 1
+    return True
+
+print(is_prime(11))
+
+m_li=[]
+j=1
+j=2
+def multiples(mul):
+    global j
+    j=5
+    for i in range(1,11):
+        m_li.append(f'{mul}*{i}={j*mul}')
+    return  m_li
+print(multiples(5))
+m_li=[]
+def hello_test(x):
+    for i in range(x):
+        m_li.append(i)
+    return m_li
+print(j)
+print(hello_test(5))
+
+
+
+
 
 
 
