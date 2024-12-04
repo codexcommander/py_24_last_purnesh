@@ -11,6 +11,15 @@ print(c)
 a="Python is fun!"
 b=a.split()
 c=""
+for i in a:
+    c=c+i
+    if c in ("apple","banana","cherry"):
+        if c == "cherry":
+            print(c)
+            break
+        print(c, end=",")
+        c=""
+        print(c)
 for i in b:
     c=i+" "+c
 print(c)
@@ -37,53 +46,29 @@ print(b)
 #Extract all the digits from the string "abc123xyz456".
 
 a="abc123xyz456"
-for i in a:
-    if i.isdigit():
-        print(i, end="")
-print()
-#Join a list of strings ["Python", "is", "awesome"] into a single string separated by spaces.
 
-a=["Python", "is", "awesome"]
-#a="".join(a)
-#print(a)
-c=""
-for i in a:
-    c=c+" "+i
-print(c[1:])
+import math
 
-#Write a Python program to check if a given string starts with "Hello".
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(math.sqrt(n)) + 1):
+        if n % i == 0:
+            return False
+    return True
 
-a=input()
-#b=a.startswith("Hello")
-#if b:
-#    print("True")
-#else:
-#   print("false")
+n = 11
+print(is_prime(n))
 
-a=a.split()
-if a[0]=="Hello":
-    print("true")
-else:
-    print("false")
 
-#Count the occurrence of each character in the string "hello".
 
-a="hello"
-#for i in a:
-#    b=a.count(i)
-#    print(b, end=" ")
 
-c=0
-b=len(a)
-for i in a:
-    for j in range(b):
-        if i==a[j]:
-            c+=1
-    print(c)
-    c=0
 
-#Split the string "apple, banana, cherry" by commas.
-print("apple","banana","cherry",sep=",")
+
+
+
+
+
 
 
 
