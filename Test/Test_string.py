@@ -46,19 +46,48 @@ print(b)
 #Extract all the digits from the string "abc123xyz456".
 
 a="abc123xyz456"
+#digits=[]
 
-import math
+#for char in a:
+#    if char.isdigit():
+#        digits.append(char)
+#print(digits)
 
-def is_prime(n):
-    if n <= 1:
-        return False
-    for i in range(2, int(math.sqrt(n)) + 1):
-        if n % i == 0:
-            return False
-    return True
+digits = [char for char in a if char.isdigit()]
+print(digits)
 
-n = 11
-print(is_prime(n))
+#Join a list of strings ["Python", "is", "awesome"] into a single string separated by spaces.
+a=["Python", "is", "awesome"]
+b=" ".join(a)
+print(b)
+
+#Write a Python program to check if a given string starts with "Hello".
+
+a = input()
+if a.startswith("Hello"):
+    print("The string starts with 'Hello'.")
+else:
+    print("The string does not start with 'Hello'.")
+
+
+#Count the occurrence of each character in the string "hello".
+a = "hello"
+count={}
+for char in a:
+    if char in count:
+        count[char] += 1
+    else:
+        count[char] = 1
+print(count)
+
+#Split the string "apple, banana, cherry" by commas.
+a = "apple, banana, cherry"
+b = a.split(", ")
+print(b)
+
+
+
+
 
 
 
